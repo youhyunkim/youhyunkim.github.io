@@ -1,0 +1,183 @@
+# Basic site configuration
+baseURL = "https://www.youhyunkim.com"
+languageCode = "en"
+title = "Youhyun Kim"
+theme = "blowfish"
+
+# Enable emoji support
+enableEmoji = true
+
+# Enable Git info
+enableGitInfo = true
+
+# Content and taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+# Language configuration
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageDirection = "ltr"
+    languageName = "English"
+    title = "Youhyun Kim"
+    weight = 1
+
+# Module configuration for theme
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.87.0"
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+# Related content
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+
+# Site parameters
+[params]
+  # Basic params
+  colorScheme = "blowfish"
+  defaultAppearance = "light" # valid options: light or dark
+  autoSwitchAppearance = true
+
+  enableSearch = true
+  enableCodeCopy = true
+
+  # Article configuration
+  mainSections = ["posts"]
+  robots = ""
+
+  [params.homepage]
+    layout = "profile" # valid options: page, profile, hero, card, background, custom
+    homepageImage = "img/author.jpg" # used in: hero, and card
+    showRecent = true
+    showRecentItems = 5
+    showMoreLink = true
+    showMoreLinkDest = "/posts"
+    cardView = false
+    cardViewScreenWidth = false
+
+  [params.article]
+    showDate = true
+    showViews = false
+    showLikes = false
+    showDateUpdated = false
+    showAuthor = true
+    showHero = false
+    heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+    layoutBackgroundBlur = true
+    showBreadcrumbs = false
+    showDraftLabel = true
+    showEdit = false
+    editURL = "https://github.com/username/repo/"
+    editAppendPath = true
+    seriesOpened = false
+    showHeadingAnchors = true
+    showPagination = true
+    invertPagination = false
+    showReadingTime = true
+    showTableOfContents = false
+    showRelatedContent = false
+    relatedContentLimit = 3
+    showTaxonomies = false
+    showAuthorsBadges = false
+    showWordCount = true
+    showSummary = true
+    sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+
+  [params.list]
+    showHero = false
+    heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+    layoutBackgroundBlur = true
+    showBreadcrumbs = false
+    showSummary = false
+    showViews = false
+    showLikes = false
+    showTableOfContents = false
+    showCards = false
+    groupByYear = true
+    cardView = false
+    cardViewScreenWidth = false
+    constrainItemsWidth = false
+
+  [params.sitemap]
+    changefreq = "weekly"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+  [params.taxonomy]
+    showTermCount = true
+    showHero = false
+    heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+    showBreadcrumbs = false
+    showViews = false
+    showLikes = false
+    showTableOfContents = true
+    cardView = false
+
+  [params.term]
+    showHero = false
+    heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+    showBreadcrumbs = false
+    showViews = false
+    showLikes = false
+    showTableOfContents = true
+    groupByYear = false
+    cardView = false
+    cardViewScreenWidth = false
+
+  [params.firebase]
+    # apiKey = "XXXXXX"
+    # authDomain = "XXXXXX"
+    # projectId = "XXXXXX"
+    # storageBucket = "XXXXXX"
+    # messagingSenderId = "XXXXXX"
+    # appId = "XXXXXX"
+    # measurementId = "XXXXXX"
+
+  [params.fathomAnalytics]
+    # site = "ABC12345"
+    # domain = "llama.yoursite.com"
+
+  [params.buymeacoffee]
+    # identifier = ""
+    # globalWidget = true
+    # globalWidgetMessage = "Hello"
+    # globalWidgetColor = "#FFDD00"
+    # globalWidgetPosition = "Right"
+
+  [params.verification]
+    # google = ""
+    # bing = ""
+    # pinterest = ""
+    # yandex = ""

@@ -1,0 +1,21 @@
+[en]
+  title = "Youhyun Kim"
+  languageName = "English"
+  displayName = "EN"
+  isoCode = "en"
+  weight = 1
+  rtl = false
+
+  dateFormat = "2 January 2006"
+
+  [en.author]
+    name = "Youhyun Kim"
+    image = "img/author.jpg"
+    headline = "[Your Title/Role]"
+    bio = "[Brief bio about yourself]"
+    links = [
+      { email = "mailto:your.email@example.com" },
+      { link = "https://youhyunkim.com" },
+      { github = "https://github.com/yourusername" },
+      { linkedin = "https://linkedin.com/in/yourprofile" },
+    ]
